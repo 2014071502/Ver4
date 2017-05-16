@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Home - UST TAEKWONDO</title>
+</head>
+<body id="body">
+
+
+	<div id="banner">
+		<img src="sources/ust.png" style="margin-left:50px;">
+		<div id="bannerTITLE">
+			<span style="font-size:60px;">UST TAEKWONDO</span><br>
+			<span style="font-size:27px;">INSTITUTE OF PHYSICAL EDUCATION & ATHLETICS</span><br>
+			<span style="font-size:17px;font-weight:bold;">PONTIFICAL AND ROYAL UNIVERSITY OF SANTO TOMAS THE <br>CATHOLIC UNIVESITY OF THE PHILIPPINES</span><br>
+		</div>
+		<img src="sources/taekwondo.png" style="margin-right:50px;right:0;">
+	</div>
+
+	<div id="navBar">
+		<form action="search.php" method="post">
+		<input type="textbox" name="s"/><input type="submit" value="Search" name="search"/>
+		<span id="navLinks">
+			<span><a href="news.html">NEWS AND ANNOUNCEMENTS</a></span>
+			<span><a href="about.php">ABOUT</a></span>
+			<span><a href="contacts.php">CONTACTS</a></span>
+			<span><a href="uaap.html">GAMES SCHEDULE</a></span>
+		</span>
+		</form>
+		<form action="login.php" method="post" style="position:absolute;right:70px;top:200px;"><input type="submit" value="LOGIN"/></form>
+	</div>
+
+	<div style="background-image: url(sources/background.png);">
+		<div id="SS">
+			<div id="SScon">
+				<img src="sources/slide1.jpg" />
+				<img src="sources/slide2.jpg" />
+				<img src="sources/slide3.jpg" />
+				<img src="sources/slide4.jpg" />
+				<img src="sources/slide5.jpg" />
+				<img src="sources/slide6.jpg" />
+				<img src="sources/slide7.jpg" />
+				<img src="sources/slide8.jpg" />
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="footer">
+		<span style="color:blue;"> <a href="http://sportsinstitute.ust.edu.ph/">2017 @ Institute of Physical Education and Athletics</a></span> | Powered by: UST SANTO TOMAS E- SERVICE PROVIDERS |<br><a href="contacts.php">Contact Us</a><br>
+		Photo credits to: Mr. Lennard Perez
+	</div>
+
+</body>
+
+	<style>
+
+		div.container {
+	      display:inline-block;
+
+	    }
+
+		body{
+			margin:0;
+			font-family:century gothic;
+			
+		}
+
+		div#banner{
+			height:200px;
+			background-color: rgb(252,249,8);
+			color:black;
+		}
+
+		div#banner > img {
+			position:absolute;
+			display:inline-block;
+			height:150px;
+			margin-top:10px;
+		}
+
+		div#bannerTITLE {
+			width:80%;
+			position:absolute;
+			left:10%;
+			text-align: center;
+			margin-top:25px;
+		}
+
+		input {
+			display:inline-block;
+			margin-left: 7px;
+		}
+
+		div#navBar {
+			height:40px;
+			background-color: rgba(0,0,0,0.9);
+		}
+
+		form {
+			padding-top: 9px;
+		}
+
+		span#navLinks {
+			display:inline-block;
+			width:70%;
+			position:absolute;
+			left:15%;
+			text-align: center;
+			font-size:0px;
+		}
+
+		a {
+			font-size:13px;
+			color:white;
+			padding-top: 10px;
+			padding-bottom: 15px;
+			padding-left: 10px;
+			padding-right:10px;
+			transition: background-color 0.5s ease;
+		}
+		a:hover {
+			color:black;
+			background-color: white;
+		}
+
+		div#SS {
+			height:710px;
+			overflow:hidden;
+			width:70%;
+			margin:auto;
+			box-shadow: 0px 0px 75px #322e2e;
+		}
+
+		div#SScon {
+			width:800%;
+			position:relative;
+			left:0%;
+			font-size:0;
+			height:100%;
+			animation-name: boxesAnimationRL;
+    		animation-duration: 30s;
+    		animation-iteration-count:infinite;
+		}
+
+		div#SScon > img{
+			width:12.4999%;
+			display:inline-block;
+			position:relative;
+			font-size:0px;
+			margin:0;
+			padding:0;
+			vertical-align: top;
+		}
+
+		@keyframes boxesAnimationRL {
+		  	0%{left:0%;}		/*STEADY PIC 1*/
+		  	8%{left:0%;}		/*STEADY PIC 1*/
+		  	12%{left:-100%;}	/*STEADY PIC 2*/
+		  	20%{left:-100%;}	/*STEADY PIC 2*/
+		  	24%{left:-200%;}	/*STEADY PIC 3*/
+		  	32%{left:-200%;}	/*STEADY PIC 3*/
+		  	36%{left:-300%;}	/*STEADY PIC 4*/
+		  	44%{left:-300%;}	/*STEADY PIC 4*/
+		  	48%{left:-400%;}	/*STEADY PIC 5*/
+		  	56%{left:-400%;}	/*STEADY PIC 5*/
+		  	60%{left:-500%;}	/*STEADY PIC 6*/
+		  	68%{left:-500%;}	/*STEADY PIC 6*/
+		  	72%{left:-600%;}	/*STEADY PIC 7*/
+		  	80%{left:-600%;}	/*STEADY PIC 7*/
+		  	88%{left:-700%;}	/*STEADY PIC 8*/
+		  	96%{left:-700%;}	/*STEADY PIC 8*/
+		  	100%{left:0%;}		/*BACK TO 0%*/
+		}
+
+		@-moz-keyframes boxesAnimationRL {
+		    0%{left:0%;}
+		  	45%{left:0%;}
+		  	55%{left:-99.9%;}
+		  	100%{left:-99.9%;}
+		}
+		@-webkit-keyframes boxesAnimationRL {
+		    0%{left:0%;}
+		  	40%{left:0%;}
+		  	60%{left:-99.9%;}
+		  	100%{left:-99.9%;}
+		}
+
+		div#footer {
+			position:relative;
+			width:100%;
+			background-color: black;
+			text-align: center;
+			color:white;
+			padding-top:25px;
+			padding-bottom:21px;
+			font-size:12px;
+		}
+
+	</style>
+
+</html>
